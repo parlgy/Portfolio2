@@ -19,11 +19,10 @@
     <title>Duka</title>
 </head>
 <body style="font-family: 'Finlandica', sans-serif;">
-    
     <header class="bg-gray-900">
         <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8">
           <a class="block text-teal-300" href="/">
-            <span class="sr-only">Home</span>
+            <span class="sr-only">categories</span>
             <svg
               class="h-8"
               viewBox="0 0 28 24"
@@ -37,41 +36,26 @@
             </svg>
           </a>
       
-          <div class="flex items-center justify-end flex-1 md:justify-between">
-            <nav class="hidden md:block" aria-labelledby="header-navigation">
-              <h2 class="sr-only" id="header-navigation">Header navigation</h2>
+          <div class="flex items-center justify-end flex-1 md:justify-between ">
+            <nav class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0 absolute lg:relative mt-16 lg:mt-0 bg-gray-900 lg:bg-transparent inset-0 z-40 " aria-labelledby="nav-content" id="nav-content">
       
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a class="text-white transition hover:text-white/75" href="/">
-                    Home
-                  </a>
-                </li>
-      
-                <li>
-                  <a class="text-white transition hover:text-white/75" href="/products.html">
-                    Products
-                  </a>
-                </li>
-      
-                <li>
-                  <a class="text-white transition hover:text-white/75" href="/categories.html">
-                    Categories
-                  </a>
-                </li>
-      
-                <li>
-                  <a class="text-white transition hover:text-white/75" href="/">
-                    Contact Us
-                  </a>
-                </li>
+              <ul class="list-reset lg:flex justify-center lg:justify-start flex-1 items-center text-center pt-32 lg:pt-0">
+                <li class="mr-3 text-center w-full lg:lg:w-auto">
+					<a class="inline-block py-2 px-4 text-white no-underline" href="/">Home</a>
+				</li>
+				<li class="mr-3 text-center sm:w-full lg:lg:w-auto">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/products.html">Products</a>
+				</li>
+				<li class="mr-3 w-full lg:lg:w-auto">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/categories.html">Categories</a>
+				</li>
+				<li class="mr-3 w-full lg:lg:w-auto">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Contact Us</a>
+				</li>   
               </ul>
             </nav>
-      
-            
 
               <div class="sm:gap-4 sm:flex">
-
                 <a href="#" class="block flex items-center mr-4">
                 <!-- <i class="fa fa-search text-2xl text-white pt-1 lg:pr-4"></i> -->
 
@@ -85,6 +69,7 @@
       
               <button
                 class="block p-2.5 text-white bg-gray-800 rounded md:hidden hover:text-white/75 transition"
+                id="nav-toggle"
               >
                 <span class="sr-only">Toggle menu</span>
                 <svg
@@ -106,7 +91,6 @@
           </div>
         </div>
       </header>
-
 
 <!-- Hero Section -->
     <div class="relative">
@@ -756,5 +740,15 @@
           </div>
         </div>
       </footer>
+
+
+
+
+      <script>
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
 </body>
 </html>
