@@ -14,13 +14,13 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <title>Categories</title>
+    <title>Product Details</title>
 </head>
 <body style="font-family: 'Finlandica', sans-serif;">
     <header class="bg-gray-900">
         <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8">
           <a class="block text-teal-300" href="/">
-            <span class="sr-only">categories</span>
+            <span class="sr-only">Product Details</span>
             <svg
               class="h-8"
               viewBox="0 0 28 24"
@@ -39,13 +39,13 @@
       
               <ul class="list-reset lg:flex justify-center lg:justify-start flex-1 items-center text-center pt-32 lg:pt-0">
                 <li class="mr-3 text-center w-full lg:lg:w-auto">
-					<a class="inline-block py-2 px-4 text-gray-600 no-underline" href="/index.html">Home</a>
+					<a class="inline-block py-2 px-4 text-white no-underline" href="/index.html">Home</a>
 				</li>
 				<li class="mr-3 text-center sm:w-full lg:lg:w-auto">
 					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/products.html">Products</a>
 				</li>
 				<li class="mr-3 w-full lg:lg:w-auto">
-					<a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/categories.html">Categories</a>
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/categories.html">Categories</a>
 				</li>
 				<li class="mr-3 w-full lg:lg:w-auto">
 					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Contact Us</a>
@@ -91,208 +91,402 @@
       </header>
 
 
-      <!-- Hero Section -->
-    <div class="relative">
-        <img src="https://images.unsplash.com/photo-1584680226833-0d680d0a0794?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="absolute inset-0 object-cover w-full h-full" alt="" />
-        <div class="relative bg-gray-900 bg-opacity-75">
-          <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div class="flex flex-col items-center justify-between xl:flex-row">
-              <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                  Categories
-                </h2>
-              </div>
-            </div>
+<style>
+    .no-spinners {
+      -moz-appearance: textfield;
+    }
+  
+    .no-spinners::-webkit-outer-spin-button,
+    .no-spinners::-webkit-inner-spin-button {
+      margin: 0;
+      -webkit-appearance: none;
+    }
+  </style>
+  
+  <section>
+    <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
+      <div class="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="">
+          <div class="aspect-w-1 aspect-h-1">
+            <img alt="" class="object-cover rounded-xl " src="https://images.unsplash.com/photo-1627844541143-a561a1a9b72a"/>
           </div>
         </div>
+  
+        <div class="sticky top-0">
+          <!-- <strong class="border border-blue-600 rounded-full tracking-wide px-3 font-medium py-0.5 text-xs bg-gray-100 text-blue-600"> Pre Order </strong> -->
+          <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium bg-green-500">
+            <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+            <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+            <span class="text-gray-700"> In Stock</span>
+          </strong>
+  
+          <div class="flex justify-between mt-8">
+            <div class="max-w-[35ch]">
+              <h1 class="text-2xl font-bold">
+                Fun Product That Does Something Cool
+              </h1>
+  
+              <p class="mt-0.5 text-sm">
+                Highest Rated Product
+              </p>
+  
+              <div class="flex mt-2 -ml-0.5">
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+  
+                <svg
+                  class="w-5 h-5 text-gray-200"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Price -->
+  
+            <p class="text-lg font-bold">
+              $119.99
+            </p>
+          </div>
+
+          <!-- Product Details -->
+  
+          <details class="relative mt-4 group">
+            <summary class="block">
+              <div>
+                <div class="prose max-w-none group-open:hidden">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam dicta beatae eos ex error culpa delectus rem 
+                    tenetur, architecto quam nesciunt, dolor veritatis nisi minus inventore, rerum at recusandae?
+                  </p>
+                </div>
+  
+                <span class="mt-4 text-sm font-medium underline cursor-pointer group-open:absolute group-open:bottom-0 group-open:left-0 group-open:mt-0">
+                  Read More
+                </span>
+              </div>
+            </summary>
+  
+            <div class="pb-6 prose max-w-none">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam dicta beatae eos ex error culpa delectus rem tenetur, 
+                architecto quam nesciunt, dolor veritatis nisi minus inventore, rerum at recusandae?
+              </p>
+  
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam sapiente nobis ea 
+                veritatis error consequatur nisi exercitationem iure laudantium culpa, animi temporibus non! Maxime et quisquam amet. A, deserunt!
+              </p>
+            </div>
+          </details>
+  
+          <form class="mt-8">
+            <fieldset>
+              <legend class="mb-1 text-sm font-medium">Color</legend>
+              <div class="flow-root">
+                <div class="flex flex-wrap -m-0.5">
+                  <label for="color_tt" class="cursor-pointer p-0.5">
+                    <input type="radio" name="color" id="color_tt" class="sr-only peer" />
+                    <span class="inline-block px-3 py-1 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      Texas Tea
+                    </span>
+                  </label>
+  
+                  <label for="color_fr" class="cursor-pointer p-0.5">
+                    <input type="radio" name="color" id="color_fr" class="sr-only peer" />
+                    <span class="inline-block px-3 py-1 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      Fiesta Red
+                    </span>
+                  </label>
+  
+                  <label for="color_cb" class="cursor-pointer p-0.5">
+                    <input type="radio" name="color" id="color_cb" class="sr-only peer" />
+                    <span class="inline-block px-3 py-1 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      Cobalt Blue
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+  
+            <fieldset class="mt-4">
+              <legend class="mb-1 text-sm font-medium">Size</legend>
+              <div class="flow-root">
+                <div class="flex flex-wrap -m-0.5">
+                  <label for="size_xs" class="cursor-pointer p-0.5">
+                    <input type="radio" name="size" id="size_xs" class="sr-only peer" />
+                    <span class="inline-flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      XS
+                    </span>
+                  </label>
+  
+                  <label for="size_s" class="cursor-pointer p-0.5">
+                    <input type="radio" name="size" id="size_s" class="sr-only peer" />
+                    <span class="inline-flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      S
+                    </span>
+                  </label>
+  
+                  <label for="size_m" class="cursor-pointer p-0.5">
+                    <input type="radio" name="size" id="size_m" class="sr-only peer" />
+                    <span class="inline-flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      M
+                    </span>
+                  </label>
+  
+                  <label for="size_l" class="cursor-pointer p-0.5">
+                    <input type="radio" name="size" id="size_l" class="sr-only peer" />
+                    <span class="inline-flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      L
+                    </span>
+                  </label>
+  
+                  <label for="size_xl" class="cursor-pointer p-0.5">
+                    <input type="radio" name="size" id="size_xl" class="sr-only peer" />
+                    <span class="inline-flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full group peer-checked:bg-black peer-checked:text-white">
+                      XL
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+  
+            <div class="flex mt-8">
+              <div>
+                <label for="quantity" class="sr-only">Qty</label>
+                <input type="number" id="quantity" min="1" value="1" class="w-12 py-3 text-xs text-center border-gray-200 rounded no-spinners" />
+              </div>
+  
+              <button type="submit" class="block px-5 py-3 ml-3 text-xs font-medium text-white bg-green-600 rounded hover:bg-green-500">
+                Add to Cart
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
+  </section>
 
 
+
+      <!-- Related Products -->
+      
       <section>
         <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-            <div class="grid gap-0 row-gap-0 lg:grid-cols-2 grid-cols-1">
-                <a class="relative block bg-black group h-56" href="#">
-                    <img
-                      class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
-                      src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                      alt=""
-                    />
-                    <div class="relative p-8">
-                      <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
-                        Ends Today
-                      </p>
-                  
-                      <p class="text-2xl font-bold text-white">Hair Products</p>
-                    </div>
-                  </a>
-                  <a class="relative block bg-black group h-56" href="#">
-                    <img
-                      class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
-                      src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                      alt=""
-                    />
-                    <div class="relative p-8">
-                      <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
-                        Ends Today
-                      </p>
-                  
-                      <p class="text-2xl font-bold text-white">Lady's Shoes</p>
-                    </div>
-                  </a>
-                  <a class="relative block bg-black group h-56" href="#">
-                    <img
-                      class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
-                      src="https://images.unsplash.com/photo-1522273500616-6b4757e4c184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
-                      alt=""
-                    />
-                    <div class="relative p-8">
-                      <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
-                        Ends Today
-                      </p>
-                  
-                      <p class="text-2xl font-bold text-white">Accessories</p>
-                    </div>
-                  </a>
-                  <a class="relative block bg-black group h-56" href="#">
-                    <img
-                      class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
-                      src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                      alt=""
-                    />
-                    <div class="relative p-8">
-                      <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
-                        Ends Today
-                      </p>
-                  
-                      <p class="text-2xl font-bold text-white">Cloths</p>
-                    </div>
-                  </a>
-                  
+            <div class="py-8 text-2xl font-bold">
+                <h1>Related Products</h1>
             </div>
-            
-        </div>
-        
+            <div class="grid gap-5 row-gap-5 mb-8 lg:grid-cols-5 grid-cols-2">
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-red-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-red-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-red-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700">Sold Out</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-red-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-red-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-red-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700">Sold Out</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>
+              <a href="/" aria-label="View Item" class="relative inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2">
+                <div class="flex flex-col h-full">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-40" alt="" />
+                  <div class="flex-grow border border-t-0 rounded-b">
+                    <div class="p-5">
+                      <h6 class="mb-2 font-semibold leading-5">Shoe Rack</h6>
+                      <p class="text-sm text-gray-900">
+                        Ksh 200
+                      </p>
+                    </div>
+                  </div>
+                  <strong class="absolute inline-flex items-center border border-gray-200 rounded px-2.5 py-1.5 text-xs font-medium mx-2 my-2 bg-green-500">
+                    <span class="animate-ping w-2.5 h-2.5 bg-green-600/75 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="w-2.5 h-2.5 bg-green-600 rounded-full absolute -top-1 -left-1"></span>
+                    <span class="text-gray-700"> In Stock</span>
+                  </strong>
+                </div>
+              </a>  
+            </div>
+          </div>
       </section>
-
-
-      <!-- Categories -->
-      <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <h1 class="text-2xl py-2 mb-4 font-bold">Categories</h1>
-          <div class="grid gap-5 row-gap-5 lg:grid-cols-8 grid-cols-4">
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-      </div>
-      </div>
 
       
       <footer class="bg-gray-900">
