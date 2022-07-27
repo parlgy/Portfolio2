@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&family=Inconsolata&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+        <div class="w-full relative flex items-center justify-center">
+            <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                <div id="slider" class="h-full flex lg:gap-2 md:gap-2 gap-2 items-center justify-start transition ease-out duration-700">
+                    <div class="flex flex-shrink-0 relative full sm:w-auto">
+                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 1</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+  
+  <section>
+    
+    <div class="xl:w-1/2 w-11/12">
+        <h1 role="heading" tabindex="0" class="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800 dark:text-white">Touching hundreds of lives</h1>
+        <h2 role="contentinfo" tabindex="0" class="text-base leading-normal text-center text-gray-600 dark:text-gray-200 mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum is simply dummy text of the printing</h2>
+    </div>
+    <div class="2xl:px-20 lg:px-12 px-4 flex flex-wrap items-start mt-4">
+        <div class="mt-24">
+            <div class="flex items-end">
+                <img tabindex="0" src="https://i.ibb.co/kBgtHK6/Rectangle-5.png" alt="girl with blue background" class="w-20 h-20 rounded-lg mr-6" />
+                <img tabindex="0" src="https://i.ibb.co/9nLBtjx/Rectangle-3.png" alt="guy winking" class="w-48 h-36 rounded-lg" />
+            </div>
+            <div class="flex items-center justify-end my-6">
+                <img tabindex="0" src="https://i.ibb.co/jRbF1KF/Rectangle-4.png" alt="guy smiling" />
+            </div>
+            <div class="flex items-start">
+                <img tabindex="0" src="https://i.ibb.co/Sf4Q94L/Rectangle-6.png" alt="girl with bluw background" class="w-48 h-48 rounded-lg" />
+                <img tabindex="0" src="https://i.ibb.co/fnNqJrx/Rectangle-7.png" alt="guy with glasses" class="w-20 h-20 rounded-lg ml-6 flex-shrink-0 object-cover object-fit" />
+            </div>
+        </div>
+        <div class="ml-6 mt-32">
+            <img tabindex="0" src="https://i.ibb.co/LSxy7fy/Rectangle-9.png" class="w-72 h-80 rounded-lg" alt="guy with sunglasses" />
+            <div class="flex items-start mt-6">
+                <img tabindex="0" src="https://i.ibb.co/X8PKD3q/Rectangle-8.png" alt="girl  laughing" class="w-48 h-48 rounded-lg" />
+                <img tabindex="0" src="https://i.ibb.co/2Yj51CY/Rectangle-13.png" alt="guy with glasses" class="w-20 h-20 rounded-lg ml-6 object-cover object-fit" />
+            </div>
+        </div>
+        <div class="mt-14 ml-6">
+            <div class="lg:flex">
+                <div>
+                    <img tabindex="0" src="https://i.ibb.co/bWGVSkP/Rectangle-10.png" alt="group of friends" class="w-96 h-72 rounded-lg object-center object-fit" />
+                </div>
+                <div>
+                    <div class="flex ml-6">
+                        <img tabindex="0" src="https://i.ibb.co/80jvpSv/Rectangle-16.png" class="w-20 h-20 rounded-lg mt-14" alt="man" />
+                        <img tabindex="0" src="https://i.ibb.co/6PR2Y74/Rectangle-15.png" class="w-20 h-24 rounded-lg ml-6" alt="woman" />
+                    </div>
+                    <img tabindex="0" src="https://i.ibb.co/M5rvjhk/Rectangle-14.png" alt="boy with blonde hair" class="ml-6 mt-6 w-48 h-32 rounded-lg" />
+                </div>
+            </div>
+            <div class="mt-6 flex">
+                <img tabindex="0" class="w-48 h-48 rounded-lg" src="https://i.ibb.co/GPpMsbr/Rectangle-12.png" alt="young girl with red hair" />
+                <img tabindex="0" class="w-72 h-56 rounded-lg ml-6" src="https://i.ibb.co/VBcgkVL/Rectangle-11.png" alt="young girl with red hair" />
+            </div>
+        </div>
+    </div>
+
+  </section>
+  
+<script src="/script.js"></script>
+</body>
+</html>
