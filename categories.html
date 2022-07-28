@@ -35,19 +35,23 @@
       </a>
   
     <div class="flex items-center justify-end flex-1 md:justify-between ">
-      <nav class="w-full flex-grow flex flex-col lg:flex-row items-center lg:w-auto hidden lg:block pt-6 lg:pt-0 absolute lg:relative mt-10 lg:mt-0 inset-0 z-40 h-screen" aria-labelledby="nav-content" id="nav-content">
+      <nav class="w-full flex-grow flex flex-col lg:flex-row items-center lg:w-auto hidden lg:block pt-6 lg:pt-0 absolute lg:relative mt-10 lg:mt-0 inset-0 z-40 h-screen transition ease-out duration-700" aria-labelledby="nav-content" id="nav-content">
         <ul class="list-reset lg:flex justify-center lg:justify-start flex-1 items-center text-center pt-32 pb-32 lg:pb-0 lg:pt-0 bg-gray-900 lg:bg-transparent h-screen">
-          <li class="mr-3 lg:lg:w-auto">
-            <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="/">Home</a>
+          <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+            <img src="https://img.icons8.com/color/48/000000/online-store.png" class="w-7 h-7"/>
+            <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="/">Home</a>
           </li>
-            <li class="mr-3 lg:lg:w-auto">
-              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="/products.html">Products</a>
+            <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+              <img src="https://img.icons8.com/color/48/000000/product--v1.png" class="w-7 h-7"/>
+              <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="/products.html">Products</a>
             </li>
-            <li class="mr-3 lg:lg:w-auto">
-              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="/categories.html">Categories</a>
+            <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+              <img src="https://img.icons8.com/color/48/000000/grocery-shelf.png" class="w-7 h-7"/>
+              <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="/categories.html">Categories</a>
             </li>
-            <li class="mr-3 lg:lg:w-auto">
-              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="#">Contact Us</a>
+            <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+              <img src="https://img.icons8.com/color/48/000000/heavy.png" class="w-7 h-7"/>
+              <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="#">My Orders</a>
             </li>   
         </ul>
       </nav>
@@ -89,7 +93,7 @@
 
 
       <!-- Hero Section -->
-    <div class="relative">
+    <div class="relative pt-16">
         <img src="https://images.unsplash.com/photo-1584680226833-0d680d0a0794?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="absolute inset-0 object-cover w-full h-full" alt="" />
         <div class="relative bg-gray-900 bg-opacity-75">
           <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -196,7 +200,32 @@
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/clothes.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Cloths</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                    <!-- <i class="fa fa-car text-green-600 text-4xl"></i> -->
+                    <img src="https://img.icons8.com/color/48/000000/bag-front-view.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Bags</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/kitchenwares.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Kitchenware</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/food.png"/>
                 </div>
                 </a>
              <p class="text-base lg:text-xl">Food</p>
@@ -204,7 +233,69 @@
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/jewelry.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Jewelry</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/stationery.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">stationery</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/commodity.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Commodity</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/new--v1.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">New</p>
+            </div>
+      </div>
+      </div>
+      <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <!-- <h1 class="text-2xl py-2 mb-4 font-bold">Categories</h1> -->
+          <div class="grid gap-5 row-gap-5 lg:grid-cols-8 grid-cols-4">
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/clothes.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Cloths</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                    <!-- <i class="fa fa-car text-green-600 text-4xl"></i> -->
+                    <img src="https://img.icons8.com/color/48/000000/bag-front-view.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Bags</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/kitchenwares.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Kitchenware</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/food.png"/>
                 </div>
                 </a>
              <p class="text-base lg:text-xl">Food</p>
@@ -212,98 +303,34 @@
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/jewelry.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">Jewelry</p>
             </div>
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/stationery.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">stationery</p>
             </div>
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/commodity.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">Commodity</p>
             </div>
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/new--v1.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">New</p>
             </div>
       </div>
       </div>

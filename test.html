@@ -17,183 +17,108 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-        <div class="w-full relative flex items-center justify-center">
-            <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
-                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <div class="bg-gray-900">
+        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+          <div class="relative flex items-center justify-between">
+            <div class="flex items-center">
+              <a href="/" aria-label="Company" title="Company" class="inline-flex items-center mr-8">
+                <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                  <rect x="3" y="1" width="7" height="12"></rect>
+                  <rect x="3" y="17" width="7" height="6"></rect>
+                  <rect x="14" y="1" width="7" height="6"></rect>
+                  <rect x="14" y="11" width="7" height="12"></rect>
                 </svg>
-            </button>
-            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                <div id="slider" class="h-full flex lg:gap-2 md:gap-2 gap-2 items-center justify-start transition ease-out duration-700">
-                    <div class="flex flex-shrink-0 relative full sm:w-auto">
-                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 1</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Company</span>
+              </a>
+              <ul class="flex items-center hidden space-x-8 lg:flex" id="nav-content">
+                <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Product</a></li>
+                <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Features</a></li>
+                <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Pricing</a></li>
+                <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">About us</a></li>
+              </ul>
             </div>
-            <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
-                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <ul class="flex items-center hidden space-x-8 lg:flex">
+              <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Sign in</a></li>
+              <li>
+                <a
+                  href="/"
+                  class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  aria-label="Sign up"
+                  title="Sign up"
+                >
+                  Sign up
+                </a>
+              </li>
+            </ul>
+            <!-- Mobile menu -->
+            <div class="lg:hidden">
+              <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline" id="nav-toggle">
+                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                  <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                  <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
                 </svg>
-            </button>
-        </div>
-    </div>
-  
-  <section>
-    
-    <div class="xl:w-1/2 w-11/12">
-        <h1 role="heading" tabindex="0" class="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800 dark:text-white">Touching hundreds of lives</h1>
-        <h2 role="contentinfo" tabindex="0" class="text-base leading-normal text-center text-gray-600 dark:text-gray-200 mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum is simply dummy text of the printing</h2>
-    </div>
-    <div class="2xl:px-20 lg:px-12 px-4 flex flex-wrap items-start mt-4">
-        <div class="mt-24">
-            <div class="flex items-end">
-                <img tabindex="0" src="https://i.ibb.co/kBgtHK6/Rectangle-5.png" alt="girl with blue background" class="w-20 h-20 rounded-lg mr-6" />
-                <img tabindex="0" src="https://i.ibb.co/9nLBtjx/Rectangle-3.png" alt="guy winking" class="w-48 h-36 rounded-lg" />
-            </div>
-            <div class="flex items-center justify-end my-6">
-                <img tabindex="0" src="https://i.ibb.co/jRbF1KF/Rectangle-4.png" alt="guy smiling" />
-            </div>
-            <div class="flex items-start">
-                <img tabindex="0" src="https://i.ibb.co/Sf4Q94L/Rectangle-6.png" alt="girl with bluw background" class="w-48 h-48 rounded-lg" />
-                <img tabindex="0" src="https://i.ibb.co/fnNqJrx/Rectangle-7.png" alt="guy with glasses" class="w-20 h-20 rounded-lg ml-6 flex-shrink-0 object-cover object-fit" />
-            </div>
-        </div>
-        <div class="ml-6 mt-32">
-            <img tabindex="0" src="https://i.ibb.co/LSxy7fy/Rectangle-9.png" class="w-72 h-80 rounded-lg" alt="guy with sunglasses" />
-            <div class="flex items-start mt-6">
-                <img tabindex="0" src="https://i.ibb.co/X8PKD3q/Rectangle-8.png" alt="girl  laughing" class="w-48 h-48 rounded-lg" />
-                <img tabindex="0" src="https://i.ibb.co/2Yj51CY/Rectangle-13.png" alt="guy with glasses" class="w-20 h-20 rounded-lg ml-6 object-cover object-fit" />
-            </div>
-        </div>
-        <div class="mt-14 ml-6">
-            <div class="lg:flex">
-                <div>
-                    <img tabindex="0" src="https://i.ibb.co/bWGVSkP/Rectangle-10.png" alt="group of friends" class="w-96 h-72 rounded-lg object-center object-fit" />
-                </div>
-                <div>
-                    <div class="flex ml-6">
-                        <img tabindex="0" src="https://i.ibb.co/80jvpSv/Rectangle-16.png" class="w-20 h-20 rounded-lg mt-14" alt="man" />
-                        <img tabindex="0" src="https://i.ibb.co/6PR2Y74/Rectangle-15.png" class="w-20 h-24 rounded-lg ml-6" alt="woman" />
+              </button>
+              <!-- Mobile menu dropdown  -->
+              <div class="absolute top-0 left-0 w-full" id="nav-content">
+                <div class="p-5 bg-white border rounded shadow-sm">
+                  <div class="flex items-center justify-between mb-4">
+                    <div>
+                      <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                        <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                          <rect x="3" y="1" width="7" height="12"></rect>
+                          <rect x="3" y="17" width="7" height="6"></rect>
+                          <rect x="14" y="1" width="7" height="6"></rect>
+                          <rect x="14" y="11" width="7" height="12"></rect>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+                      </a>
                     </div>
-                    <img tabindex="0" src="https://i.ibb.co/M5rvjhk/Rectangle-14.png" alt="boy with blonde hair" class="ml-6 mt-6 w-48 h-32 rounded-lg" />
+                    <div>
+                      <button aria-label="Close Menu" title="Close Menu" id="nav-toggle" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                          <path`
+                            fill="currentColor"
+                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul class="space-y-4" >
+                      <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
+                      <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
+                      <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
+                      <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
+                      <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Sign in</a></li>
+                      <li>
+                        <a
+                          href="/"
+                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          aria-label="Sign up"
+                          title="Sign up"
+                        >
+                          Sign up
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
+              </div>
             </div>
-            <div class="mt-6 flex">
-                <img tabindex="0" class="w-48 h-48 rounded-lg" src="https://i.ibb.co/GPpMsbr/Rectangle-12.png" alt="young girl with red hair" />
-                <img tabindex="0" class="w-72 h-56 rounded-lg ml-6" src="https://i.ibb.co/VBcgkVL/Rectangle-11.png" alt="young girl with red hair" />
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-  </section>
-  
-<script src="/script.js"></script>
+
+
+
+      <script>
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
 </body>
 </html>

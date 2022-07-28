@@ -19,80 +19,85 @@
     <title>Duka</title>
 </head>
 <body style="font-family: 'Finlandica', sans-serif;">
-    <header class="bg-gray-900 fixed z-30 w-full transition ease-out duration-700">
-        <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8 ">
-          <a class="block text-teal-300" href="/">
-            <span class="sr-only">categories</span>
+  <header class="bg-gray-900 fixed z-30 w-full ">
+    <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8 ">
+      <a class="block text-teal-300" href="/">
+        <span class="sr-only">categories</span>
+        <svg
+          class="h-8"
+          viewBox="0 0 28 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+  
+    <div class="flex items-center justify-end flex-1 md:justify-between ">
+      <nav class="w-full flex-grow flex flex-col lg:flex-row items-center lg:w-auto hidden lg:block pt-6 lg:pt-0 mt-10 lg:mt-0 inset-0 z-40 h-screen transition ease-out duration-700" aria-labelledby="nav-content" id="nav-content">
+        <ul class="list-reset lg:flex justify-center lg:justify-start flex-1 items-center text-center pt-32 pb-32 lg:pb-0 lg:pt-0 bg-gray-900 lg:bg-transparent h-screen">
+          <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+            <img src="https://img.icons8.com/color/48/000000/online-store.png" class="w-7 h-7"/>
+            <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="/">Home</a>
+          </li>
+            <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+              <img src="https://img.icons8.com/color/48/000000/product--v1.png" class="w-7 h-7"/>
+              <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="/products.html">Products</a>
+            </li>
+            <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+              <img src="https://img.icons8.com/color/48/000000/grocery-shelf.png" class="w-7 h-7"/>
+              <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="/categories.html">Categories</a>
+            </li>
+            <li class="mr-8 lg:lg:w-auto flex justify-center items-center">
+              <img src="https://img.icons8.com/color/48/000000/heavy.png" class="w-7 h-7"/>
+              <a class="inline-block text-gray-100 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0 text-lg" href="#">My Orders</a>
+            </li>   
+        </ul>
+      </nav>
+
+          <div class="sm:gap-4 sm:flex">
+            <a href="#" class="block flex items-center mr-4">
+                <i class="fa fa-shopping-cart text-3xl text-white"></i>
+                <p class="text-xl text-white pl-1">(0)</p>
+            </a>
+            <a class="hidden sm:block px-5 py-2.5 text-sm font-medium text-white bg-gray-800 rounded-md hover:text-white/75 transition"
+              href="/">Register/Login
+            </a>
+          </div>
+  
+          <button
+            class="block p-2.5 text-white bg-gray-800 rounded md:hidden hover:text-white/75 transition"
+            id="nav-toggle"
+          >
+            <span class="sr-only">Toggle menu</span>
             <svg
-              class="h-8"
-              viewBox="0 0 28 24"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
             >
               <path
-                d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
-                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </a>
-      
-        <div class="flex items-center justify-end flex-1 md:justify-between transition ease-out duration-700">
-        <nav class="w-full flex-grow flex flex-col lg:flex-row items-center lg:w-auto hidden lg:block pt-6 lg:pt-0 absolute lg:relative mt-10 lg:mt-0 inset-0 z-40 h-screen transition ease-out duration-700" aria-labelledby="nav-content" id="nav-content">
-          <ul class="list-reset lg:flex justify-center lg:justify-start flex-1 items-center text-center pt-32 pb-32 lg:pb-0 lg:pt-0 bg-gray-900 lg:bg-transparent h-screen">
-            <li class="mr-3 lg:lg:w-auto">
-              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="/">Home</a>
-            </li>
-              <li class="mr-3 lg:lg:w-auto">
-                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="/products.html">Products</a>
-              </li>
-              <li class="mr-3 lg:lg:w-auto">
-                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="/categories.html">Categories</a>
-              </li>
-              <li class="mr-3 lg:lg:w-auto">
-                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-8 px-96 lg:px-0" href="#">Contact Us</a>
-              </li>   
-          </ul>
-        </nav>
-
-              <div class="sm:gap-4 sm:flex">
-                <a href="#" class="block flex items-center mr-4">
-                    <i class="fa fa-shopping-cart text-3xl text-white"></i>
-                    <p class="text-xl text-white pl-1">(0)</p>
-                </a>
-                <a class="hidden sm:block px-5 py-2.5 text-sm font-medium text-white bg-gray-800 rounded-md hover:text-white/75 transition"
-                  href="/">Register/Login
-                </a>
-              </div>
-      
-              <button
-                class="block p-2.5 text-white bg-gray-800 rounded md:hidden hover:text-white/75 transition"
-                id="nav-toggle"
-              >
-                <span class="sr-only transition ease-out duration-700">Toggle menu</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
+          </button>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
 
 <!-- Hero Section -->
-    <div class="relative">
+<main>
+    <div class="relative ">
         <img src="https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="absolute inset-0 object-cover w-full h-full" alt="" />
-        <div class="relative bg-gray-900 bg-opacity-75">
+        <div class="relative bg-gray-900 bg-opacity-75 lg:pt-32">
           <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="flex flex-col items-center justify-between xl:flex-row">
               <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
@@ -102,12 +107,7 @@
                 <p class="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
                 </p>
-                <a href="/" aria-label="" class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700">
-                  Learn more
-                  <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-                  </svg>
-                </a>
+                
               </div>
             </div>
           </div>
@@ -115,27 +115,55 @@
       </div>
 
 
-      <section class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <form>   
-          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
-          <div class="relative">
-              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-              </div>
-              <input type="search" id="default-search" class="block p-6 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Products, Categories..." required>
-              <button type="submit" class="text-white absolute right-2.5 bottom-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-          </div>
-      </form>
-      </section>
+
+</section>
+    <section class="pt-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:mt-16 px-4 ">
+      <form>   
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+        <div class="relative">
+            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <input type="search" id="default-search" class="block p-6 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Products, Categories..." required>
+            <button type="submit" class="text-white absolute right-2.5 bottom-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        </div>
+    </form>
+</section>
 
 
-      <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+<section>
+      <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 inset-0">
         <h1 class="text-2xl py-2 mb-4 font-bold">Categories</h1>
           <div class="grid gap-5 row-gap-5 lg:grid-cols-8 grid-cols-4">
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/clothes.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Cloths</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                    <!-- <i class="fa fa-car text-green-600 text-4xl"></i> -->
+                    <img src="https://img.icons8.com/color/48/000000/bag-front-view.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Bags</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/kitchenwares.png"/>
+                </div>
+                </a>
+             <p class="text-base lg:text-xl">Kitchenware</p>
+            </div>
+            <div class="text-2xl text-center flex flex-col items-center">
+                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
+                <div class="">
+                  <img src="https://img.icons8.com/color/48/000000/food.png"/>
                 </div>
                 </a>
              <p class="text-base lg:text-xl">Food</p>
@@ -143,61 +171,39 @@
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/jewelry.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">Jewelry</p>
             </div>
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/stationery.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">stationery</p>
             </div>
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/commodity.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">Commodity</p>
             </div>
             <div class="text-2xl text-center flex flex-col items-center">
                 <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
                 <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
+                  <img src="https://img.icons8.com/color/48/000000/new--v1.png"/>
                 </div>
                 </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
-            </div>
-            <div class="text-2xl text-center flex flex-col items-center">
-                <a href="/" class="w-20 h-20 bg-gray-100 flex justify-center items-center rounded-full shadow">
-                <div class="">
-                    <i class="fa fa-car text-green-600 text-4xl"></i>
-                </div>
-                </a>
-             <p class="text-base lg:text-xl">Food</p>
+             <p class="text-base lg:text-xl">New</p>
             </div>
       </div>
       </div>
+
+
 
       <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="py-8 text-2xl font-bold">
@@ -388,6 +394,8 @@
         </div>
       </div>
 </div>
+
+</main>
 
       <footer class="bg-gray-900">
         <div class="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
